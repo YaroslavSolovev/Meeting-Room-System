@@ -1,0 +1,25 @@
+.rooms-page {
+   width: 100%;
+   min-height: calc(100vh - 72px);
+
+   background: #F8FAFC;
+}
+
+
+.rooms-content {
+   width: 100%;
+
+   padding: 40px;
+}
+
+
+.rooms-content h1 {
+   margin: 0 0 32px;
+
+   font-family: "Manrope", sans-serif;
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 33px;
+
+   color: #0F172A;
+}

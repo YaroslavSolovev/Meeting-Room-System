@@ -1,0 +1,357 @@
+.room-details-page {
+   width:100%;
+   min-height:calc(100vh - 72px);
+   background:#F8FAFC;
+   overflow:hidden;
+
+}
+
+.breadcrumbs {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 8px;
+   width: 100%;
+   height: 55px;
+   padding: 24px 40px 12px;
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #475569;
+}
+
+.breadcrumbs a {
+   color: #475569;
+   text-decoration: none;
+}
+
+.breadcrumbs > span {
+   color: #94A3B8;
+   font-size: 18px;
+   line-height: 14px;
+}
+
+.breadcrumbs strong {
+   color: #0F172A;
+   font-weight: 600;
+}
+
+.room-details-layout {
+
+   display:flex;
+   flex-direction:row;
+
+   align-items:flex-start;
+
+   gap:32px;
+
+   width:100%;
+
+   height:calc(100% - 55px);
+
+   padding:0 40px 48px;
+
+   box-sizing:border-box;
+
+   overflow:hidden;
+}
+
+.room-info-card,
+.schedule-card {
+   box-sizing: border-box;
+   background: #FFFFFF;
+   border: 1px solid #E2E8F0;
+   border-radius: 16px;
+}
+
+.room-info-card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   flex: 0 0 420px;
+   width: 420px;
+   min-height: 260px;
+   padding: 24px;
+   gap: 20px;
+}
+
+.room-info-card h1 {
+   width: 100%;
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+   font-weight: 800;
+   font-size: 24px;
+   line-height: 33px;
+   color: #0F172A;
+}
+
+.room-address {
+   width: 100%;
+   margin: -12px 0 0;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #475569;
+}
+
+.room-info-divider {
+   width: 100%;
+   height: 1px;
+   margin: 0;
+   background: #E2E8F0;
+}
+
+.room-info-list {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 12px;
+   width: 100%;
+}
+
+.room-info-list p {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 12px;
+   margin: 0;
+   min-height: 19px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #0F172A;
+}
+
+.room-info-marker {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 0 18px;
+   width: 18px;
+   height: 18px;
+   color: #0D9488;
+}
+
+.room-info-marker svg {
+   display: block;
+   width: 18px;
+   height: 18px;
+}
+
+.schedule-card {
+   width:908px;
+   height:801px;
+   padding:32px;
+   display:flex;
+   flex-direction:column;
+   gap:24px;
+   box-sizing:border-box;
+
+}
+
+.schedule-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   gap: 24px;
+   margin: 0;
+}
+
+.schedule-header > div:first-child {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 4px;
+}
+
+.schedule-header h2 {
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 27px;
+   color: #0F172A;
+}
+
+.schedule-header p {
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 19px;
+   color: #475569;
+   text-transform: capitalize;
+}
+
+.schedule-date-control {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 8px;
+   width: 149px;
+   height: 39px;
+   padding: 10px 16px;
+   border: 1px solid #E2E8F0;
+   border-radius: 8px;
+   background: #FFFFFF;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.schedule-date-control > svg {
+   width: 16px;
+   height: 16px;
+   flex: 0 0 16px;
+   color: #475569;
+}
+
+.schedule-date-control > span {
+   white-space: nowrap;
+   font-family: "Manrope", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #0F172A;
+}
+
+.schedule-date-control input {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.schedule-area {
+   display: grid;
+   grid-template-columns: 60px minmax(0, 1fr);
+   width: 100%;
+   height: 576px;
+   gap: 0;
+}
+
+.schedule-times,
+.schedule-timeline {
+   position: relative;
+   height: 576px;
+}
+
+.schedule-times span {
+   position: absolute;
+   left: 0;
+   width: 60px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 18px;
+   color: #475569;
+}
+
+.schedule-line {
+   position: absolute;
+   left: 0;
+   right: 0;
+   height: 1px;
+   background: #E2E8F0;
+}
+
+.schedule-booking {
+   position: absolute;
+   left: 0;
+   right: 0;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   padding: 0 16px;
+   border-radius: 8px;
+   font-family: "Manrope", sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   overflow: hidden;
+}
+
+.schedule-booking.own {
+   border: 1px solid #14B8A6;
+   background: #CCFBF1;
+   color: #0F766E;
+}
+
+.schedule-booking.busy {
+   border: 1px solid #E2E8F0;
+   background: #F1F5F9;
+   color: #334155;
+}
+
+.schedule-loading {
+   position: absolute;
+   inset: 0;
+   z-index: 3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgba(255, 255, 255, 0.72);
+}
+
+
+.schedule-actions {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+   height: 63px;
+   padding: 12px 0;
+   margin: 0;
+}
+
+.room-details-state {
+   min-height: calc(100vh - 72px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 14px;
+   padding: 40px;
+   background: #F8FAFC;
+}
+
+@media (max-width: 900px) {
+   .breadcrumbs {
+      height: auto;
+      padding: 20px 24px 12px;
+      flex-wrap: wrap;
+   }
+   .room-details-layout {
+      flex-direction: column;
+      padding: 0 24px 40px;
+   }
+   .room-info-card {
+      width: 100%;
+      flex-basis: auto;
+   }
+   .schedule-card {
+      width: 100%;
+      height: auto;
+   }
+   .schedule-header {
+      height: auto;
+      align-items: flex-start;
+   }
+}
+
+.schedule-date-control input {
+   position:absolute;
+   inset:0;
+   opacity:0;
+   cursor:pointer;
+}

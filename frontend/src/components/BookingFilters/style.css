@@ -1,0 +1,19 @@
+.booking-filters{
+   display:flex;
+   align-items:center;
+   gap:12px;
+}
+
+.booking-filters select{
+   height:39px;
+   padding:
+   10px 16px;
+   background:white;
+   border:
+   1px solid #E2E8F0;
+   border-radius:8px;
+   font-family: anrope;
+   font-size:14px;
+   color:#0F172A;
+   cursor:pointer;
+}

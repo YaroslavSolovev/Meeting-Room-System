@@ -1,0 +1,176 @@
+.room-card {
+   width: 100%;
+   background: #FFFFFF;
+   border: 1px solid #E2E8F0;
+   border-radius: 12px;
+   box-sizing: border-box;
+}
+
+.card-body {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 20px;
+   gap: 16px;
+   box-sizing: border-box;
+}
+
+.card-header {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 4px;
+   width: 100%;
+}
+
+.card-header h2 {
+   margin: 0;
+   font-family: "Manrope", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 25px;
+   color: #0F172A;
+}
+
+.card-header span {
+   font-family: "Manrope", sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
+   color: #475569;
+}
+
+.room-stats {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   width: 100%;
+}
+
+.stat {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-family: "Manrope", sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
+   color: #475569;
+}
+
+.stat svg {
+   width:16px;
+   height:16px;
+   flex:none;
+}
+
+.availability-bar {
+   width:100%;
+   height:36px;
+   display:flex;
+   align-items:center;
+   gap:8px;
+   padding:10px;
+   box-sizing:border-box;
+   border-radius:8px;
+   font-family:"Manrope", sans-serif;
+   font-size:12px;
+   font-weight:600;
+   line-height:16px;
+}
+
+.dot {
+   width:6px;
+   height:6px;
+   min-width:6px;
+   border-radius:50%;
+   flex:none;
+}
+
+.available {
+   background:#CCFBF1;
+   color:#0D9488;
+}
+
+.available .dot {
+   background:#14B8A6;
+}
+
+.unavailable {
+   background:#E2E8F0;
+   color:#475569;
+}
+
+.unavailable .dot {
+   background:#94A3B8;
+}
+
+.card-actions {
+   display:flex;
+   align-items:center;
+   gap:12px;
+   width:100%;
+}
+
+.details-link,
+.book-btn {
+   height:39px;
+   flex:1;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   padding:10px 16px;
+   border-radius:8px;
+   font-family:"Manrope", sans-serif;
+   font-size:14px;
+   font-weight:600;
+   line-height:19px;
+}
+
+.details-link {
+   background:white;
+   border:none;
+   color:#0D9488;
+}
+
+.book-btn {
+   border:none;
+   background:#E2E8F0;
+   color:#94A3B8;
+}
+
+.book-btn.active {
+   background:#0D9488;
+   color:#FFFFFF;
+}
+
+
+.stat img.icon{
+   width:16px;
+   height:14px;
+   flex:none;
+}
+
+.booking-meta{
+   display:flex;
+   align-items:center;
+   gap:16px;
+   font-size:14px;
+   line-height:19px;
+   color:#475569;
+}
+
+.room-name{
+   display:flex;
+   align-items:center;
+   gap:6px;
+   font-weight:600;
+   color:#0D9488;
+}
+
+.dot{
+   width:4px;
+   height:4px;
+   background:#94A3B8;
+   border-radius:50%;
+}

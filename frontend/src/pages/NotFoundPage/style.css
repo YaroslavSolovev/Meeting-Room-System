@@ -1,0 +1,87 @@
+.not-found-page {
+   width:100%;
+   min-height:calc(100vh - 72px);
+   background:#F8FAFC;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   box-sizing:border-box;
+}
+
+.not-found-content {
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+   gap:32px;
+   transform:translateY(-20px);
+}
+
+.not-found-text {
+   width:480px;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   gap:12px;
+   text-align:center;
+}
+
+.not-found-code {
+   font-family:"Manrope", sans-serif;
+   font-size:120px;
+   line-height:120px;
+   font-weight:800;
+   color:#0D9488;
+}
+
+.not-found-text h1 {
+   margin:0;
+   font-family:"Manrope", sans-serif;
+   font-size:28px;
+   line-height:38px;
+   font-weight:800;
+   color:#0F172A;
+}
+
+.not-found-text p {
+   margin:0;
+   width:480px;
+   font-family:"Manrope", sans-serif;
+   font-size:16px;
+   line-height:24px;
+   font-weight:400;
+   color:#475569;
+}
+
+.return-home-btn {
+   height:48px;
+   padding:14px 28px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:8px;
+   background:#0D9488;
+   border:none;
+   border-radius:8px;
+   cursor:pointer;
+   font-family:"Manrope";
+}
+
+.return-home-btn span {
+   font-size:15px;
+   line-height:20px;
+   font-weight:700;
+   color:white;
+}
+
+.return-home-btn:hover {
+   opacity:.9;
+}
+
+.not-found-code {
+   font-family:"Manrope";
+   font-size:96px;
+   line-height:96px;
+   font-weight:800;
+   color:#0D9488;
+}

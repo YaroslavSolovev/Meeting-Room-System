@@ -1,0 +1,150 @@
+.cancel-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(15,23,42,0.6);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:1000;
+
+}
+
+
+.cancel-dialog{
+
+    width:480px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:32px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:24px;
+
+    box-shadow:
+    0 12px 24px rgba(15,23,42,.2);
+
+}
+
+
+.dialog-header{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+.dialog-header h2{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+
+.dialog-header p{
+
+    margin:0;
+
+    color:#475569;
+
+    font-size:14px;
+
+    line-height:19px;
+
+}
+
+
+
+.cancel-summary{
+
+    background:#F8FAFC;
+
+    border-radius:12px;
+
+    padding:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+.cancel-summary strong{
+
+    font-size:15px;
+
+}
+
+
+.cancel-summary span{
+
+    font-size:13px;
+
+    color:#475569;
+
+}
+
+
+
+.dialog-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+.dialog-actions button{
+
+    flex:1;
+
+    height:43px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+
+.leave-btn{
+
+    background:white;
+
+    border:1px solid #E2E8F0;
+
+    color:#475569;
+
+}
+
+
+.confirm-btn{
+
+    background:#EF4444;
+
+    border:none;
+
+    color:white;
+
+}

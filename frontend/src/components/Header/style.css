@@ -1,0 +1,138 @@
+.navbar {
+   box-sizing:border-box;
+   display:flex;
+   flex-direction:row;
+   justify-content:space-between;
+   align-items:center;
+   padding:0 40px;
+   width:100%;
+   height:72px;
+   background:#FFFFFF;
+   border-bottom:1px solid #E2E8F0;
+}
+
+.brand{
+   display:flex;
+   align-items:center;
+   gap:12px;
+   width:154px;
+   height:36px;
+}
+
+.logo-badge{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:36px;
+   height:36px;
+   background:#0D9488;
+   border-radius:10px;
+}
+
+.logo-text{
+   font-family:'Manrope',sans-serif;
+   font-weight:800;
+   font-size:20px;
+   line-height:27px;
+   color:#0F172A;
+}
+
+.nav-links{
+   display:flex;
+   align-items:center;
+   gap:32px;
+   height:72px;
+}
+
+.nav-rooms,
+.nav-bookings {
+   height:72px;
+   display:flex;
+   align-items:center;
+   position:relative;
+   text-decoration:none;
+   color:#475569;
+   font-family:'Manrope';
+   font-size:15px;
+   font-weight:500;
+}
+
+.nav-rooms {
+   width:108px;
+}
+
+.nav-bookings {
+   width:141px;
+}
+
+.nav-rooms.active,
+.nav-bookings.active {
+   color:#0D9488;
+   font-weight:600;
+}
+
+.nav-rooms.active::after,
+.nav-bookings.active::after {
+   content:"";
+   position:absolute;
+   bottom:0;
+   left:0;
+   width:100%;
+   height:2px;
+   background:#0D9488;
+}
+
+.user-profile{
+   display:flex;
+   align-items:center;
+   gap:12px;
+   width:149px;
+   height:40px;
+}
+
+.user-info{
+   display:flex;
+   flex-direction:column;
+   align-items:flex-end;
+}
+
+
+.user-info span{
+   font-family:'Manrope';
+   font-size:14px;
+   font-weight:600;
+   line-height:19px;
+   color:#0F172A;
+}
+
+
+.avatar-wrapper{
+   width:40px;
+   height:40px;
+   border:1px solid #E2E8F0;
+   border-radius:20px;
+}
+
+
+.avatar-circle {
+   width:40px;
+   height:40px;
+   border-radius:50%;
+   background:#5478D9;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+
+.avatar-circle .initials {
+   width:40px;
+   height:40px;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-family:"Inter", sans-serif;
+   font-size:14px;
+   font-weight:600;
+   line-height:17px;
+   color:#FFFFFF;
+}

@@ -1,0 +1,52 @@
+.office-selector{
+   position:relative;
+   cursor:pointer;
+}
+
+.office-title{
+   display:flex;
+   align-items:center;
+   gap:12px;
+   font-family:"Manrope", sans-serif;
+   font-size:20px;
+   font-weight:700;
+   color:#0F172A;
+}
+
+.arrow{
+   width:8px;
+   height:8px;
+   border-right:2px solid #0F172A;
+   border-bottom:2px solid #0F172A;
+   transform:rotate(45deg);
+   margin-top:-4px;
+   transition:.2s;
+}
+
+.arrow.open{
+   transform:rotate(225deg);
+   margin-top:4px;
+}
+
+.office-dropdown{
+   position:absolute;
+   top:35px;
+   left:0;
+   width:220px;
+   background:white;
+   border:1px solid #E2E8F0;
+   border-radius:8px;
+   box-shadow:0 10px 25px rgba(0,0,0,.08);
+   z-index:10;
+}
+
+.office-option{
+   padding:12px 16px;
+   font-family:"Manrope";
+   font-size:15px;
+   color:#0F172A;
+}
+
+.office-option:hover{
+   background:#F1F5F9;
+}

@@ -1,0 +1,54 @@
+.booking-conflict-paper {
+   width: 490px;
+   max-width: calc(100vw - 32px);
+   border-radius: 20px !important;
+}
+
+.booking-conflict-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 32px !important;
+   text-align: center;
+}
+
+.booking-conflict-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 64px;
+   height: 64px;
+   margin-bottom: 16px;
+   border-radius: 50%;
+   background: #FEE2E2;
+   color: #DC2626;
+   font-family: "Manrope", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+
+.booking-conflict-content h2 {
+   margin: 0 0 20px;
+   font-family: "Manrope", sans-serif;
+   font-size: 24px;
+   line-height: 33px;
+   font-weight: 800;
+   color: #0F172A;
+}
+
+
+.booking-conflict-content p {
+   max-width: 390px;
+   margin: 0 0 24px;
+   font-family: "Manrope", sans-serif;
+   font-size: 14px;
+   line-height: 20px;
+   color: #64748B;
+}
+
+.booking-conflict-icon svg {
+   display: block;
+   width: 32px;
+   height: 32px;
+}
